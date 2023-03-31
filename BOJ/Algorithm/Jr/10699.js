@@ -1,7 +1,6 @@
 // 입력이 없는 문제
 
 // 내가 푼 버전 (중간에 console.log 써버려서 틀렸다 처리 됐었다. 그래서 구글링을..)
-
 const date = new Date();
 
 let year = date.getFullYear();
