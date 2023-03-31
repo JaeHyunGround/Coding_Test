@@ -11,4 +11,4 @@
 // const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 // let input = fs.readFileSync(filePath).toString().trim();
 
-console.log("Hello world!");
+console.log("Hello World!");
