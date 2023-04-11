@@ -23,3 +23,9 @@ for (var i = 1; i < nums.length; i++) {
 
 answer.push(min_num, max_num);
 console.log(answer.join(" "));
+
+
+
+
+let test = [1, 15, 3 ,4, 11, 12]
+console.log(test.sort((a, b) => a - b));
