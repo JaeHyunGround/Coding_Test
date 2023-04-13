@@ -1,16 +1,15 @@
-// 그리디
-
-const fs = require('fs');
-const input = fs.readFileSync("./dev/stdin").toString().trim().split('\n');
+const fs = require("fs");
+const filePath = process.platform === "linux" ? "/dev/stdin" : "BOJ/input.txt";
+let input = fs.readFileSync(filePath).toString().trim().split("\n");
 
 const [N,M] = input[0].split(' ').map(a=>Number(a)) // N : 스크린, M : 바구니 길이
-const J = Number(input[1]) // 사과의 갯수
+const apple_num = Number(input[1]) // 사과의 갯수
 const apples = input.slice(2,input.length).map(a=> Number(a)) 
 // input의 인덱스 2번부터 input 길이 미만의 인덱스 번호까지 배열로 뽑아낸다.
  
 let answer = 0
-let start = 1 // 바구니의 시작점
-let end = M // 바구니의 끝점
+let start = 1 // 바구니의 첫 부분
+let end = M // 바구니의 마지막 부분
 
 // for..of
 // 반복가능한 객체에 대해서 반복하는 루프 생성
