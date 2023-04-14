@@ -1,6 +1,6 @@
 const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "BOJ/input.txt";
-let input = fs.readFileSync(filePath).toString().trim().split("\n");
+let input = fs.readFileSync(filePath).toString().trim().split("\n").map(Number);
 
 // 배열의 첫 번째 요소를 제거할 때 .shift()
 input.shift();
