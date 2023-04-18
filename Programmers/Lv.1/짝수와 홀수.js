@@ -1,11 +1,1 @@
-function solution(num) {
-    var answer = '';
-    
-    if (num % 2 == 0) {
-        answer = 'Even';
-    } else {
-        answer = 'Odd'
-    }
-    
-    return answer;
-}
+const solution = (num) => ((num % 2) === 0) ? 'Even' : 'Odd'
