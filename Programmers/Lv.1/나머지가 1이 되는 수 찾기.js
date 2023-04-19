@@ -14,6 +14,8 @@ function solution(n) {
 }
 
 
+// while 안에서 증감연산자 가능하다
+
 // function solution(n, x = 1) {    
 //     while (x++) {
 //         if (n % x === 1) {
