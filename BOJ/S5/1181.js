@@ -7,7 +7,7 @@ input.shift(); // 맨 앞 단어 갯수 제거
 let set = new Set(input); // 중복값이 있는 배열을 Set 객체로 만들어서 중복을 제거한 후
 let new_input = [...set]; // set 객체를 배열로 변환
 
-// 1. 길이순으로 정렬
+// 1. 길이순으로 정렬 (오름차순 정렬)
 new_input.sort((a, b) => {
     if(a.length > b.length) {
         return 1;
