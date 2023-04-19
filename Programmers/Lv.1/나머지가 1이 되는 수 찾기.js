@@ -4,6 +4,7 @@ function solution(n) {
     
     while(state) {
         if (n % num === 1) {
+            state = false;
             break;
         } else {
             num++;
