@@ -1,6 +1,5 @@
 function solution(arr) {
     var answer = 0;
-    
     let sum = 0;
     
     for (var i = 0; i < arr.length; i++) {
