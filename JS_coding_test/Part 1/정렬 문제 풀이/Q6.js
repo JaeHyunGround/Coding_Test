@@ -28,5 +28,3 @@ for (let j = 0; j < answer_arr.length; j++) {
     answer.push(`${answer_arr[j].x} ${answer_arr[j].y}`);
 }
 console.log(answer.join('\n'));
-
-// point : 배열 요소를 객체로 만들어서 정렬
