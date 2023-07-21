@@ -17,9 +17,9 @@ for (let i = 0; i < input.length; i++) {
 
 let answer_arr = arr.sort(function(a, b) {
     if (a.y == b.y) {
-        return a.x - b.x; // x 좌표가 같을 땐 y 좌표 오름차순
+        return a.x - b.x; // y 좌표가 같을 땐 x 좌표 오름차순
     } else {
-        return a.y - b.y; // x 좌표를 기준으로 오름차순
+        return a.y - b.y; // y 좌표를 기준으로 오름차순
     }
 });
 
