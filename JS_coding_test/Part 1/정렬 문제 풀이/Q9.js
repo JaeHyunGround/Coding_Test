@@ -9,6 +9,7 @@ input.shift(); // case 갯수 제거
 let arr = []; // case들을 담을 배열
 
 // 데이터가 나이, 이름 2가지 이므로 나이순 정렬을 위해 객체화 시켜준다.
+// or 2차원 배열을 사용할 수 있다.
 for (let i = 0; i < input.length; i++) {
   let one_case = input[i].split(" ");
   let cases = {};
@@ -17,6 +18,10 @@ for (let i = 0; i < input.length; i++) {
   cases.name = one_case[1];
 
   arr.push(cases);
+
+  //   let age = Number(input[i].split(" ")[0]);
+  //   let name = input[i].split(" ")[1];
+  //   arr.push([age, name]);
 }
 
 // 나이 순 정렬 but 나이가 같다면 가입한 순서대로
@@ -32,3 +37,7 @@ for (let j = 0; j < arr.length; j++) {
 }
 
 console.log(answer.join("\n"));
+
+// let answer = "";
+// for (let x of arr) answer += x[0] + " " + x[1] + "\n";
+// console.log(answer)
