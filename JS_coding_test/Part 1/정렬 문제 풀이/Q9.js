@@ -29,6 +29,9 @@ for (let i = 0; i < input.length; i++) {
 // why ? 나이가 같을 땐 이미 가입한 순서대로 정렬이 되어있기 때문 !!
 arr.sort(function (a, b) {
   if (a.age !== b.age) return a.age - b.age;
+  // nodejs는 기본적으로 stable 정렬을 제공
+  // stable란 정렬할 값이 같다면 순서가 그대로 유지됨
+  // return a - b;
 });
 
 let answer = []; // 정답을 담을 배열
