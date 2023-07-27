@@ -1,5 +1,4 @@
 // 백준 1427
-
 const fs = require("fs");
 const filePath =
   process.platform === "linux" ? "/dev/stdin" : "JS_coding_test/input.txt";
