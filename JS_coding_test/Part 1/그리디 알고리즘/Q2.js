@@ -15,11 +15,17 @@ let times = input
   .sort((a, b) => a - b);
 
 let answer = 0;
+let summary = 0;
+
+// for (let i = 0; i < times.length; i++) {
+//   for (let j = 0; j <= i; j++) {
+//     answer += times[j];
+//   }
+// }
 
 for (let i = 0; i < times.length; i++) {
-  for (let j = 0; j <= i; j++) {
-    answer += times[j];
-  }
+  summary += times[i]; // i번째 사람이 기다린 총 시간
+  answer += summary; // 지금까지 소욛횐 총 시간
 }
 
 console.log(answer);
