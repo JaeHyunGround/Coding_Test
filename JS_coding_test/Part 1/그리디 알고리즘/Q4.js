@@ -1,4 +1,4 @@
-// 백준
+// 백준 2839
 
 const fs = require("fs");
 const filePath =
