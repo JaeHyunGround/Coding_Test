@@ -12,7 +12,6 @@ let input = fs.readFileSync(filePath).toString().trim().split(" ");
 
 // 풀이 2
 // 몇 개의 수가 들어오든 문제를 처리할 수 있도록 코드를 다시 짜봄.
-
 let reverse_num = []; // 역순으로 읽은 수의 크기를 비교하기 위해 새로운 배열 생성
 
 for (let x of input) {
