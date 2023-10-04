@@ -33,7 +33,7 @@ let input = fs.readFileSync(filePath).toString().trim().split(" ");
 
 // 풀이 3
 // map 함수로 중복되는 코드를 줄인다 !! - 스터디 개선점
-// 기존 2개의 풀이느 input이 2개 이상이면 쓸 수가 없는 코드였다.
+// 기존 2개의 풀이는 input이 2개 이상이면 쓸 수가 없는 코드였다.
 let answer = input
   .map((num) => num.toString().split("").reverse().join(""))
   .sort((a, b) => a - b);
