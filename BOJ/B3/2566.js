@@ -9,9 +9,11 @@ input.forEach((line, i) => {
   NbyN_array[i] = line.split(" ").map(Number);
 });
 
-let max = NbyN_array[0][0]; // 최대값을 담을 변수 선언
-let row = 0; // 행
-let column = 0; // 열
+// let max = NbyN_array[0][0]; // 최대값을 담을 변수 선언
+// let row = 0; // 행
+// let column = 0; // 열
+
+let [max, row, column] = [0, 0, 0]; // 최대값을 담을 변수, 행, 열 -> 구조분해할당
 
 NbyN_array.forEach((line, i) => {
   line.forEach((value, j) => {
