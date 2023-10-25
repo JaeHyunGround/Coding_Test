@@ -9,6 +9,7 @@ let answer = [];
 input.forEach((line) => {
   let parenthesesArray = [];
   let temp = "";
+
   for (let i = 0; i < line.length; i++) {
     if (line[i] === "(") parenthesesArray.push("(");
     else if (line[i] === "[") parenthesesArray.push("[");
