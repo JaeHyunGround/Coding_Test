@@ -4,8 +4,8 @@ let input = fs.readFileSync(filePath).toString().trim().split("\n");
 
 function solution(input) {
   const test_case = input.shift();
-
   const myMap = new Map();
+
   input.forEach((line) => {
     const fileExtension = line.split(".")[1].trim();
 
