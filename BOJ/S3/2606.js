@@ -2,8 +2,6 @@ const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "BOJ/input.txt";
 let input = fs.readFileSync(filePath).toString().trim().split("\n");
 
-// bfs를 사용하면 될듯
-
 const N = +input.shift();
 const M = +input.shift();
 
@@ -15,14 +13,14 @@ edges.forEach(([from, to]) => {
 });
 
 const dfs = (startNode) => {
-  const queue = [startNode]; // 탐색 해야 할 노드
+  const stack = [startNode]; // 탐색 해야 할 노드
   const visitedNodes = []; // 탐색을 마친 노드
 
-  while (queue.length) {
-    const node = queue.pop();
+  while (stack.length) {
+    const node = stack.pop();
     if (!visitedNodes.includes(node)) {
       visitedNodes.push(node);
-      queue.push(...graph[node]);
+      stack.push(...graph[node]);
     }
   }
 
