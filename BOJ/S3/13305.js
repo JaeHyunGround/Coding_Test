@@ -11,8 +11,8 @@ function solution(n, distance, cities) {
   let answer = 0n;
   let nowOliPrice = cities[0];
 
-  for (let i = 0; i < distances.length; i++) {
-    answer += nowOliPrice * distances[i];
+  for (let i = 0; i < distance.length; i++) {
+    answer += nowOliPrice * distance[i];
 
     if (nowOliPrice > cities[i + 1]) nowOliPrice = cities[i + 1];
   }
